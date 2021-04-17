@@ -196,7 +196,7 @@ class CodeSubsegment(Subsegment):
         ret.append("# assembler directives")
         ret.append(".set noat      # allow manual use of $at")
         ret.append(".set noreorder # don't insert nops after branches")
-        # ret.append(".set gp=64     # allow use of 64-bit general purpose registers")
+        ret.append(".set gp=64     # allow use of 64-bit general purpose registers")
         ret.append("")
         ret.append(".section .text, \"ax\"")
         ret.append("")
